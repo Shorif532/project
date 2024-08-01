@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: rgba(135, 207, 235, 0.583);
+  color: #333;
+  height: 3rem;
+  width: auto;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 0, 0.351);
+}
+button:hover {
+  background-color: red;
+  position: relative;
+  left: 5px;
+  transition: 0.8s ease-in-out;
+}

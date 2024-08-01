@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>https://www.befcose cafe.com/</title>
+    <link rel="stylesheet" href="Resturant.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-logo">
+          <h1>&copy; Bercose &cacute;afe</h1>
+        </div>
+        <div class="header-navbar">
+          <a href="Resturant.html">Menu</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Review</a>
+          <a href="#">Parcel</a>
+        </div>
+      </div>
+      <!-- header tag ended -->
+      <div class="anima">
+        <h2 class="animate">Hlw & welcome to our resturant.</h2>
+        <h2 class="animate">Here is our menu</h2>
+        <h2 class="animate">Choose whatever you wants</h2>
+        <a href="#Menu">Our menu</a>
+      </div>
+    </div>
+    <br />
+
+    <div class="menu">
+      <section id="Menu">
+        <h1>Menu cart :</h1>
+        <br />
+        <table>
+          <thead>
+            <tr>
+              <th>Items</th>
+              <th>Count</th>
+              <th>price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Noodles</td>
+              <th>1</th>
+              <th>200/=</th>
+            </tr>
+            <tr>
+              <td>Pasta</td>
+              <th>1</th>
+              <th>150/=</th>
+            </tr>
+            <tr>
+              <td>Biriyani</td>
+              <th>1</th>
+              <th>250/=</th>
+            </tr>
+            <tr>
+              <td>Pizza</td>
+              <th>1</th>
+              <th>500/=</th>
+            </tr>
+            <tr>
+              <td>Soup</td>
+              <th>1</th>
+              <th>100/=</th>
+            </tr>
+            <tr>
+              <td>beverage</td>
+              <th>1</th>
+              <th>50/=</th>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                need something special or you don't like this menu...want
+                something out of menu send us a message
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+        <br />
+      </section>
+    </div>
+
+    <form action="https://formspree.io/f/mrbzbqez" method="post">
+      <section id="Order">
+        <h1>Order now :</h1>
+
+        <select name="Ordered" required>
+          <option value="#" disabled selected>Choose one</option>
+          <optgroup label="Pasta items">
+            <option value="Chicken pasta">Chicken pasta</option>
+            <option value="Beef pasta">Beef pasta</option>
+            <option value="Scipy pasta">Scipy pasta</option>
+            <option value="Noodles pasta">Noodles pasta</option>
+          </optgroup>
+          <optgroup label="Noodle items">
+            <option value="Chicken noodles">chicken Noddles</option>
+            <option value="Beef noodles">Beef noodles</option>
+            <option value="Spicy noodle">Spicy noodles</option>
+          </optgroup>
+          <optgroup>
+            <option value="Beef biriyani">Beef biriyani</option>
+            <option value="Chicken biriyani">Chicken Biriyani</option>
+          </optgroup>
+          <optgroup label="Pizza">
+            <option value="Chicken pizza">Chicken Pizza</option>
+            <option value="Mozarella Pizza">Mozarella pizza</option>
+          </optgroup>
+          <option value="Beverage">Beverage</option>
+          <option value="Borhani">Borhani</option>
+        </select>
+
+        <input
+          type="email"
+          name="Email"
+          required
+          placeholder="Enter your email"
+        />
+        <input
+          type="number"
+          name="phone-number"
+          required
+          placeholder="Enter your number"
+        />
+
+        <textarea
+          name="address"
+          required
+          placeholder="Enter your address"
+        ></textarea>
+
+        <div class="button">
+          <button type="Reset">Reset</button>
+          <button type="Submit">Submit</button>
+        </div>
+      </section>
+    </form>
+  </body>
+</html>

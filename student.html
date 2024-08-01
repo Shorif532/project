@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="student.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        background-color: blanchedalmond;
+      }
+
+      .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 0.5rem;
+        font-size: 1.4rem;
+        padding: 1rem;
+        background-color: rgba(222, 184, 135, 0.337);
+      }
+
+      .navbar {
+        text-decoration: line-through;
+        font-style: italic;
+        font-weight: 600;
+      }
+
+      header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .header a {
+        text-decoration: none;
+        color: #333;
+        padding: 0.2rem;
+      }
+
+      .header a:hover {
+        color: blue;
+        font-weight: 600;
+        font-size: 1.6rem;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      .header a:active {
+        color: White;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      .box1 {
+        width: 100%;
+      }
+
+      form {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+      }
+
+      input {
+        padding: 0.5rem;
+        font-size: 1.1rem;
+        border-radius: 3px;
+      }
+
+      p {
+        padding: 0.3rem;
+      }
+
+      span {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      button {
+        padding: 0.6rem;
+        border-radius: 8px;
+      }
+
+      .box1 h4 a {
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <nav class="navbar">
+          <h1>Railbit University</h1>
+        </nav>
+        <header>
+          <a href="student.html">Admission</a>
+          <a href="#">Home</a>
+          <a href="#">About us</a>
+          <a href="#">Contact info</a>
+          <a href="#">Log in</a>
+        </header>
+      </div>
+      <div class="box">
+        <div class="box1">
+          <h3>Attention plz !!!</h3>
+          <h4>
+            if you want to take admission in
+            <abbr title="Railbit university">RBU</abbr> you should fill up this
+            form and submit it.
+          </h4>
+          <form action="https://formspree.io/f/mrbzbqez" method="post"></form>
+            <p>Name :</p>
+            <input
+              type="text"
+              name="Student name :"
+              placeholder="Enter your name"
+              required
+            />
+            <p>Email address :</p>
+            <input type="email" name="Email :" placeholder="Enter your Email" />
+            <p>Phone number :</p>
+            <input
+              type="number"
+              name="phone-number :"
+              placeholder="Enter your phone number"
+            />
+            <p>Registration number :</p>
+            <input
+              type="number"
+              name="Registration number :"
+              placeholder="Registration number"
+            />
+            <p>GPA in SSC :</p>
+            <input type="#" name="SSC GPA :" placeholder="GPA - SSC" />
+            <p>GPA in HSC :</p>
+            <input type="#" name="HSC GPA :" placeholder="GPA - HSC" />
+            <span
+              ><h4>Forgotten any info !!!</h4>
+              <a href="#">Click here...</a></span
+            >
+            <span>
+              <button type="reset">Reset</button>
+              <button type="submit">Submit</button>
+            </span>
+          </form>
+        </div>
+        <span
+          ><h4>
+            Notice : If you are suitable for this job... Our principal sir will
+            call you soon.
+          </h4></span
+        >
+      </div>
+      &copy; MD.Shoriful Islam &nap;
+    </div>
+  </body>
+</html>

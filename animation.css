@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.spin {
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  border-radius: 50%;
+  border: 25px solid grey;
+  border-top: 20px solid darkblue;
+  animation: ani 5s linear infinite;
+}
+@keyframes ani {
+  to {
+    transform: rotate(360deg);
+  }
+}

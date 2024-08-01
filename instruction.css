@@ -1,0 +1,27 @@
+body {
+  background-color: rgba(0, 139, 139, 0.861);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  font-size: 1.1rem;
+  font-family: arial, sans-serif;
+  background-color: beige;
+}
+
+.box {
+  background-color: whitesmoke;
+  margin: 10px;
+  width: min(80%, 1200px);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 1px 2px 15px #33333361;
+}
+
+h2 {
+  color: rgb(189, 93, 166);
+}
